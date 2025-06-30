@@ -1,0 +1,23 @@
+* nerd-icons-mode-line
+
+** Description
+
+This is a small package which uses [[https://github.com/rainstormstudio/nerd-icons.el][nerd-icons]] to insert icons in the mode line next to the
+filename, for quicker eye-grepping.
+
+[[file:screenshot.png]]
+
+** Installation
+
+#+begin_src emacs-lisp
+(use-package nerd-icons-mode-line
+  :ensure t
+  :vc (:url "https://github.com/grolongo/nerd-icons-mode-line")
+  :custom
+  (nerd-icons-mode-line-v-adjust 0.1) ; default value
+  (nerd-icons-mode-line-size 1.0) ; default value
+  :config (nerd-icons-mode-line-global-mode t))
+#+end_src
+
+You can adjust user options ~nerd-icons-mode-line-v-adjust~ and ~nerd-icons-mode-line-size~ by
+small increments for better display if necessary.
