@@ -1,4 +1,4 @@
-;;; nerd-icons-mode-line.el --- -*- lexical-binding: t; -*-
+;;; nerd-icons-mode-line.el --- Display nerd icons in the Emacs mode line -*- lexical-binding: t -*-
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -56,7 +56,8 @@
 (defvar nerd-icons--original-mode-line-format nil
   "Backup of the original `default-value' of `mode-line-format'.
 
-This is set the first time we turn the mode on so we can restore it exactly later.")
+This is set the first time we turn the mode on so we can restore it
+exactly later.")
 
 (defun nerd-icons--mode-line-format ()
   "Add or remove `mode-line-nerd-icon' in the default `mode-line-format'."
